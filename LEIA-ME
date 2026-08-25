@@ -1,0 +1,14 @@
+# Limite de Convergência Induzido por Simetria para Campos Eletrostáticos em D-Dimensões
+Um estudo matemático independente sobre o cancelamento de componentes vetoriais induzido por simetria e a redução de dimensões em eletrostática.
+
+Ao estudar interações eletrostáticas envolvendo fontes com extensão geométrica infinita, pude notar um padrão recorrente: a simetria pode ser usada para cancelar componentes vetoriais paralelos, deixando para trás um campo perpendicular finito. No entanto, esse cancelamento só funciona sob condições geométricas específicas.
+
+Neste breve artigo, formalizo essa intuição generalizando a Lei de Coulomb para o espaço euclidiano D -dimensional. Ao definir k como o número de dimensões ilimitadas de uma fonte, proponho e justifico matematicamente uma conjectura de convergência prática: o campo elétrico local é finito se k≤D−1.
+
+Limitações:O modelo foca especificamente em potenciais do tipo Coulomb (F\propto 1/r^{D−1}) em sistemas com invariância translacional. Ele assume simetria geométrica perfeita e densidades de carga uniformes (embora eu não tenha especificado essas limitações no PDF destacado).
+
+A derivação matemática completa, incluindo visualizações, está disponível no PDF compilado.
+
+https://doi.org/10.5281/zenodo.22092807
+
+Aviso de Tradução:O trabalho original foi escrito em inglês. Esta versão em português (texto e README) foi traduzida utilizando Inteligência Artificial. Apenas a tradução foi realizada por IA; toda a matemática, derivações, código LaTeX original e diagramas foram desenvolvidos e revisados manualmente pelo autor.
