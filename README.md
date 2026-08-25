@@ -9,3 +9,5 @@ Limitations:
 The model focuses specifically on Coulomb-like potentials (F\propto 1/r^{D−1}) in translationally invariant systems. It assumes perfect geometric symmetry and uniform charge densities(Although I didn't specify these limitations in the highlighted PDF).
 
 The full mathematical derivation, including visualizations, is available in the compiled PDF.
+
+https://doi.org/10.5281/zenodo.22092807
