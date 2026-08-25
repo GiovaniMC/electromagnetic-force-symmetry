@@ -1,4 +1,4 @@
-# electromagnetic-force-symmetry
+# Symmetry-Induced Convergence Bound for D-Dimensional Electrostatic Fields.
 An independent mathematical study on symmetry-induced vector-component cancellation and dimension reduction in electrostatics.
 
 While studying electrostatic interactions involving sources with infinite geometric extent, I was able to notice a recurring pattern: symmetry can be used to cancel parallel vector components, leaving behind a finite perpendicular field. However, this cancellation only works under specific geometric conditions.
