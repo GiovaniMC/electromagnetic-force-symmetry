@@ -66,7 +66,7 @@ Given a constant linear charge density $\lambda$ on an infinite length charged b
 
     \draw[ultra thick, red!60!black] (0, 1.2) -- (0, 1.5) node[midway, left=2pt] {\footnotesize $dy$};
     \draw[dotted, gray] (0, 1.35) -- (P);
-    \draw[->, thick, red!70!black] (P) -- (3.8, -0.36) node[right] {$d\mathbf{E}$};
+    \draw[->, thick, red!70!black] (P) -- (3.8, -0.36) node[right] {$dE$};
     \node[above right, font=\footnotesize] at (1.5, 0.67) {$r = \sqrt{x^2 + y^2}$};
     
 \end{tikzpicture}
@@ -90,21 +90,21 @@ Also, note that the purpose of the analysis isn't to determine the total force a
 For an extended charged body, this distinction can be expressed in terms of the local density. For a surface charge density $\lambda$, for example,
 
 \[
-d\mathbf F = \lambda \mathbf E\,dA,
+d F = \lambda  E\,dA,
 \]
 
 so that
 
 \[
-\frac{d\mathbf F}{dA}=\lambda\mathbf E.
+\frac{d F}{dA}=\lambda E.
 \]
 
 Although the total force obtained by integrating this quantity over an infinitely extended surface diverges,
 
 \[
-\mathbf F = \int_{\mathbb R^2} \lambda\mathbf E\,dA,
+ F = \int_{\mathbb R^2} \lambda E\,dA,
 \]
-the local field $\mathbf E$ and, consequently, the local force density $d\mathbf F/dA$ may remain finite.
+the local field $ E$ and, consequently, the local force density $d F/dA$ may remain finite.
 \par
 We can further observe these relations on some other well-known problems involving similar configurations, given:
 
@@ -334,7 +334,7 @@ d\sigma=\rho\,dx.
 \]
 Due to the symmetry of each plane, the components parallel to the plane cancel pairwise, leaving only the component normal to it:
 \[
-d\mathbf{E}=dE_x\,\hat{\mathbf{x}}.
+dE=dE_x\,\hat{x}.
 \]
 
 The magnitude of the remaining component is proportional to the surface charge density of the infinitesimal plane,
@@ -470,14 +470,14 @@ We gain a new perpendicular degree of freedom. This new dimension creates a dist
 
 Mathematically, we can formalize this intuition. Consider the general form of the local electric field in $D$-dimensional Euclidean space:
 \[
-\mathbf{E}(\mathbf{r}) = C_D \int_S \rho(\mathbf{r}') \frac{\mathbf{r} - \mathbf{r}'}{|\mathbf{r} - \mathbf{r}'|^D} \, d^D r'
+E(r) = C_D \int_S \rho(r') \frac{r - r'}{|r - \r'|^D} \, d^D r'
 \]
 where $C_D$ is the $D$-dimensional Coulomb constant. 
 
 \[\]
 Because the source is infinite in $k$ directions, we can split our coordinate system in two: a parallel subspace $V_{\parallel}$ (the $k$ infinite directions) and a perpendicular subspace $V_{\perp}$ (the remaining $D-k$ finite directions). 
 
-By symmetry, the field components parallel to $V_{\parallel}$ cancel out entirely, just like the $y$-axis components canceled in the infinite bar problem. We are left only with a perpendicular component, $\mathbf{E}_{\perp}$. 
+By symmetry, the field components parallel to $V_{\parallel}$ cancel out entirely, just like the $y$-axis components canceled in the infinite bar problem. We are left only with a perpendicular component, $E_{\perp}$. 
 Since the parallel counterparts cancel each other, the convergence of the integral depends on an equilibrium. As we move further out, the volume of further charges increases, but the individual field contributions decrease. The balance between this increase and decrease relies on some relationship between $k$ and $D$. Intuitively, for the field to be finite, there must be a bound on $D-k$ that ensures the field weakens fast enough to "beat" the growing volume of charge.
 \[\]
 
@@ -489,7 +489,7 @@ As we move further out into the $k$ unbounded directions, the volume of the dist
 The individual contribution of these distant charges in $D$ dimensions must spread over a $D$-dimensional "sphere", so its magnitude weakens proportionally to $\frac{1}{R^{D-1}}$.
 Therefore:
 \[
-|\mathbf{E}_{\perp}| \propto \int_{R_{\text{min}}}^{\infty} \left( \frac{1}{R^{D-1}} \right) R^{k-1} \, dR = \int_{R_{\text{min}}}^{\infty} R^{k - D} \, dR
+|E_{\perp}| \propto \int_{R_{\text{min}}}^{\infty} \left( \frac{1}{R^{D-1}} \right) R^{k-1} \, dR = \int_{R_{\text{min}}}^{\infty} R^{k - D} \, dR
 \]
 where $R_{\text{min}} > 0$ is the minimum distance to the source in the parallel subspace(basically, the bound of the near charges).
 
